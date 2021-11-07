@@ -6,13 +6,11 @@
 
 const parentUl = document.querySelector("#categories");
 const categoryUl = parentUl.querySelectorAll("ul");
-console.log(`Number of categories: ${categoryUl.length}`+ "\n\n");
+console.log(`Number of categories: ${categoryUl.length}\n\n`);
 const parentLi = document.querySelectorAll(".item");
 for (const parLi of parentLi) {
     const categories = parLi.querySelector("h2");
-    console.log(`Category: ${categories.innerHTML}`);
-
     const liNumber = parLi.querySelectorAll("li");
-    console.log(`Elements: ${liNumber.length}`+ "\n\n");
+    console.log(`Category: ${categories.innerHTML}\nElements: ${liNumber.length}\n\n`);
 }
 
