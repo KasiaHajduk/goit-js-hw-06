@@ -14,11 +14,14 @@ const images = [
 ];
 
 
-
-
 const parent = document.querySelector(".gallery");
 const galleryImages = images
       .map((image) => `<li><img src=${image.url}alt=${image.alt}></li>`)
       .join("");
 parent.insertAdjacentHTML("beforeend", galleryImages);
 parent.insertAdjacentHTML("beforebegin", "<h2 class='task3'>Art Gallery</h2>");
+
+parent.style.display = 'flex';
+parent.style.flexFlow = 'row wrap';
+parent.style.padding = '10px'
+parent.style.listStyle = 'none';

@@ -4,7 +4,14 @@ function getRandomHexColor() {
 
 const body = document.querySelector("body");
 
-body.addEventListener("click", () => {
+const color = () => {
   const spanColor = document.querySelector(".color");
   spanColor.innerHTML = body.style.backgroundColor = getRandomHexColor();
-});
+};
+body.addEventListener("click", color);
+
+
+// body.addEventListener("click", () => {
+//   const spanColor = document.querySelector(".color");
+//   spanColor.innerHTML = body.style.backgroundColor = getRandomHexColor();
+// });
