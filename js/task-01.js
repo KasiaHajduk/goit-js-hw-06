@@ -8,9 +8,16 @@ const parentUl = document.querySelector("#categories");
 const categoryUl = parentUl.querySelectorAll("ul");
 console.log(`Number of categories: ${categoryUl.length}\n\n`);
 const parentLi = document.querySelectorAll(".item");
-for (const parLi of parentLi) {
+
+parentLi.forEach(parLi => {
     const categories = parLi.querySelector("h2");
     const liNumber = parLi.querySelectorAll("li");
     console.log(`Category: ${categories.innerHTML}\nElements: ${liNumber.length}\n\n`);
-}
+});
+
+// for (const parLi of parentLi) {
+//     const categories = parLi.querySelector("h2");
+//     const liNumber = parLi.querySelectorAll("li");
+//     console.log(`Category: ${categories.innerHTML}\nElements: ${liNumber.length}\n\n`);
+// }
 
